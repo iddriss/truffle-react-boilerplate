@@ -1,0 +1,8 @@
+.active {
+  color: #ffde00;
+}
+
+.active::before {
+  @apply opacity-100;
+  transform: scale(1);
+}

@@ -1,0 +1,27 @@
+.footer_container {
+  @apply w-full border-t border-solid;
+  border-color:  #707070;
+}
+
+.footer_wrapper {
+  @apply mx-auto 2xl:max-w-screen-xl xl:max-w-screen-lg px-8;
+  @apply bottom-0 py-3 flex flex-wrap lg:flex-nowrap items-center;
+  @apply justify-between text-white;
+}
+
+.footer_cright {
+  @apply md:w-1/2 w-full lg:my-0 mb-3 flex justify-center items-center;
+  @apply font-sans font-light text-sm;
+}
+
+.footer_cright_container {
+  @apply w-full flex flex-col md:items-start items-center;
+}
+
+.footer_cright_container p {
+  @apply py-5;
+}
+
+.footer_socials {
+  @apply md:w-1/2 w-full flex lg:my-0 my-3 md:justify-end justify-center;
+}

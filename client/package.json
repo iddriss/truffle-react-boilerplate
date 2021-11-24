@@ -3,15 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@craco/craco": "^6.4.0",
+    "@craco/craco": "^5.9.0",
     "@headlessui/react": "^1.4.1",
     "history": "^5.1.0",
     "moralis": "0.0.121",
     "react": "latest",
+    "react-copy-to-clipboard": "^5.0.4",
     "react-dom": "latest",
+    "react-helmet": "^6.1.0",
     "react-moralis": "^0.2.8",
     "react-router-dom": "^6.0.0",
-    "react-scripts": "4.0.3",
+    "react-scripts": "^3.4.4",
+    "walletconnect": "^1.6.6",
     "web3": "1.2.2"
   },
   "scripts": {

@@ -1,0 +1,85 @@
+.nav_container {
+  @apply lg:bg-transparent w-full z-10;
+}
+
+.nav_wrapper {
+  @apply box-border py-3 sticky top-0 left-0 right-0 flex;
+  @apply lg:z-20 items-center justify-between  flex-wrap lg:flex-nowrap;
+  @apply py-10 bg-main_bg;
+}
+
+.nav_mobile {
+  @apply lg:hidden;
+}
+
+.mobile_menu {
+  @apply text-gray-300 p-2 focus:text-white focus:outline-none;
+}
+
+.logo {
+  height: 60px;
+}
+
+.nav_content {
+  @apply font-sans text-white xl:text-lg lg:text-sm text-xl;
+  @apply lg:font-light font-normal lg:w-auto w-full lg:bg-transparent;
+  @apply lg:py-0 py-10;
+}
+
+.nav_content_ul {
+  @apply flex items-center lg:flex-row flex-col;
+}
+
+.nav_content_ul li {
+  @apply lg:w-auto w-full lg:block flex items-center justify-center;
+}
+
+@media (max-width: 768px) {
+  .navContent {
+    transform: translateY(-120%);
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+    z-index: 15;
+  }
+
+  .opened.navContent {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+.navLink {
+  /* @apply w-full relative text-center lg:hover:bg-transparent brandon-g-reg-20; */
+  @apply w-full relative text-center lg:hover:bg-transparent text-xl;
+  padding: 0.2rem 0;
+  margin: 0.4rem 1.2rem;
+  transition: all 0.2s linear 0s;
+}
+
+.navLink:hover {
+  color: #ffde00;
+}
+
+.active {
+  color: #ffde00;
+}
+
+.navLink::before {
+  content: "";
+  transition: all 0.3s ease-in-out;
+  @apply right-0 absolute w-full top-full opacity-0;
+  background-color: #ffde00;
+  height: 2px;
+  transform: scale(0, 1);
+}
+
+.navLink.active::before {
+  @apply opacity-100;
+  transform: scale(1);
+}
+
+@media (max-width: 768px) {
+  .navLink {
+    padding: 1.4rem 1rem;
+  }
+}

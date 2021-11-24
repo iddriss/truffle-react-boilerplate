@@ -1,0 +1,38 @@
+.button {
+  /* @apply border brandon-g-reg-20 rounded-md; */
+  @apply border rounded-md;
+  @apply flex items-center;
+  border-color: #FFDE00;;
+  transition: all 0.2s linear 0s;
+}
+
+.normal {
+  @apply text-black;
+  background-color: #FFDE00;
+}
+
+.normal:hover {
+  @apply bg-transparent;
+  color: #FFDE00;
+}
+
+.outlined {
+  @apply bg-transparent;
+  color:  #FFDE00;
+}
+
+.outlined:hover {
+  background-color: #FFDE00;
+  @apply text-black;
+}
+
+.button[disabled] {
+  background-color: #B9AA46;
+  @apply cursor-not-allowed text-black;
+}
+
+
+.button_loading_img {
+  width: 40px;
+  height: 24px;
+}

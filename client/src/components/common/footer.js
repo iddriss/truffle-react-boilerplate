@@ -42,7 +42,7 @@ function Footer() {
           <div className={style.footer_cright}>
             <div className={style.footer_cright_container}>
               <p>
-                Schro-Dinger &copy; {new Date().getFullYear()}. All rights
+                Dapp &copy; {new Date().getFullYear()}. All rights
                 reserved.
               </p>
               <span className=" text-sm pt-0 pb-2">
